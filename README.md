@@ -16,3 +16,8 @@ Response is an order structure, where discounts applied to each product can be s
 Net Payable amount is given in "data.priceInfo.netPrice"
 
 
+To run application:
+    ./gradlew bootRun
+
+
+
