@@ -3,7 +3,7 @@ Written as spring boot web application.
 API Documentation:
 
 POST - http://localhost:8080/v1/price/order-price
-Postman collection JSON file is attached. Check file samplerequest.json
+Postman collection JSON file is attached. Check file pricing.postman_collection.json
 
 Description: 
 Incoming request should have below fields as part of mocking
@@ -14,5 +14,10 @@ Incoming request should have below fields as part of mocking
 
 Response is an order structure, where discounts applied to each product can be seen in DiscountInfo and PriceInfo sections
 Net Payable amount is given in "data.priceInfo.netPrice"
+
+
+To run application:
+    ./gradlew bootRun
+
 
 

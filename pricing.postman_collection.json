@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "db89e8e8-391c-4a2f-9b56-f9605a3b612d",
+		"name": "pricing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37270839"
+	},
+	"item": [
+		{
+			"name": "AffliliateRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"789\",\r\n    \"userId\": \"22\",\r\n    \"userRole\": \"Affiliate\",\r\n    \"date\": \"2024-07-28\",\r\n    \"userCreatedOn\": \"2020-07-29\",\r\n    \"items\": [\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 10,\r\n            \"quantity\": 1,\r\n            \"category\": \"Health\"\r\n        },\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 20,\r\n            \"quantity\": 2,\r\n            \"category\": \"Beauty\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/price/order-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"price",
+						"order-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CustomerRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"790\",\r\n    \"userId\": \"22\",\r\n    \"userRole\": \"Customer\",\r\n    \"date\": \"2024-07-28\",\r\n    \"userCreatedOn\": \"2020-07-29\",\r\n    \"items\": [\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 10,\r\n            \"quantity\": 1,\r\n            \"category\": \"Health\"\r\n        },\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 20,\r\n            \"quantity\": 2,\r\n            \"category\": \"Beauty\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/price/order-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"price",
+						"order-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EmployeeRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"789\",\r\n    \"userId\": \"22\",\r\n    \"userRole\": \"Customer\",\r\n    \"date\": \"2024-07-28\",\r\n    \"userCreatedOn\": \"2020-07-29\",\r\n    \"items\": [\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 10,\r\n            \"quantity\": 1,\r\n            \"category\": \"Health\"\r\n        },\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 20,\r\n            \"quantity\": 2,\r\n            \"category\": \"Beauty\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/price/order-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"price",
+						"order-price"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GroceryRequest",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"791\",\r\n    \"userId\": \"22\",\r\n    \"userRole\": \"Customer\",\r\n    \"date\": \"2024-07-28\",\r\n    \"userCreatedOn\": \"2020-07-29\",\r\n    \"items\": [\r\n        {\r\n            \"id\": \"345\",\r\n            \"unitPrice\": 10,\r\n            \"quantity\": 1,\r\n            \"category\": \"Grocery\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/v1/price/order-price",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v1",
+						"price",
+						"order-price"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
