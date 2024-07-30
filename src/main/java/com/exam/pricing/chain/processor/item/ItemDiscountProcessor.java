@@ -37,9 +37,6 @@ public class ItemDiscountProcessor implements ChainProcessor {
                 checkIfOldCustomer(chainContext.getUserCreatedOn())) {
             // 5 % discount
             calculateDiscount(chainContext, 5, PricingConstants.CUSTOMER_DISCOUNT);
-        } else {
-            // No discount for this role
-            return;
         }
     }
 

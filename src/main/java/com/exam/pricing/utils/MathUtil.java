@@ -4,6 +4,9 @@ import java.math.BigDecimal;
 
 public class MathUtil {
 
+    private MathUtil() {
+    }
+
     public static BigDecimal toBigDecimal(final Number n) {
         return (n instanceof BigDecimal ? (BigDecimal) n : new BigDecimal(n.toString()));
     }

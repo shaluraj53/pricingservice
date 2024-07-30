@@ -2,20 +2,24 @@ package com.exam.pricing.utils;
 
 public final class PricingConstants {
 
-    public final static String RESPONSE_MESSAGE_ORDER_PRICE_RETRIEVED_SUCCESS = "Order price calculated successfully";
+    private PricingConstants() {
 
-    public final static String GROCERY = "grocery";
+    }
+
+    public static final String RESPONSE_MESSAGE_ORDER_PRICE_RETRIEVED_SUCCESS = "Order price calculated successfully";
+
+    public static final String GROCERY = "grocery";
 
     /** Item level Discounts **/
-    public final static String EMPLOYEE_DISCOUNT = "EmployeeDiscount";
+    public static final String EMPLOYEE_DISCOUNT = "EmployeeDiscount";
 
-    public final static String CUSTOMER_DISCOUNT = "CustomerDiscount";
+    public static final String CUSTOMER_DISCOUNT = "CustomerDiscount";
 
-    public final static String AFFILIATE_DISCOUNT = "AffiliateDiscount";
+    public static final String AFFILIATE_DISCOUNT = "AffiliateDiscount";
     /** Item level Discounts **/
 
     /** Order level Discounts **/
-    public final static String ORDER_DISCOUNT = "AmountOff";
+    public static final String ORDER_DISCOUNT = "AmountOff";
     /** Order level Discounts **/
 
 }
